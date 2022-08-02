@@ -30,6 +30,7 @@ func binSearch(list []int, findMe int) int {
 }
 
 func main() {
-	fmt.Println(binSearch([]int{1, 2, 3, 3, 5, 9, 19, 33, 88, 99}, 1)) // 0 (position 0 has our searched int)
-	fmt.Println(binSearch([]int{1, 2, 3, 4, 22, 44, 54, 88, 99}, -1))  // -1 (not in the data set)
+	dataset := []int{1, 2, 3, 4, 22, 44, 54, 88, 99}
+	fmt.Println(binSearch(dataset, 1)) // 0 (position 0 has our searched int)
+	fmt.Println(binSearch(dataset, -1))  // -1 (not in the data set)
 }
